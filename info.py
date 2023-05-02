@@ -16,17 +16,17 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
+API_ID = int(environ['API_ID','12267130'])
+API_HASH = environ['API_HASH','6ddb28a13ffc2f15dc16f06be6ca3c1f']
+BOT_TOKEN = environ['BOT_TOKEN',"6226226974:AAGu_p4uGe5GoLk_tNxWvBmY3XEGtXXdTNk"]
 
 
 # Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 300))
+CACHE_TIME = int(environ.get('CACHE_TIME', 30))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 BOT_START_TIME = time()
 
-PICS = (environ.get('PICS', '')).split()
+PICS = (environ.get('PICS', 'https://te.legra.ph/file/67db40cc6febdee9a4edc.jpg')).split()
 MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/f7f2a532fe4b990044507.mp4")
 NOR_IMG = (environ.get("NOR_IMG","")).split()
 NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/6bb65e84e95b708f7be7a.jpg")
@@ -34,22 +34,22 @@ CLOSE_IMG = (environ.get('CLOSE_IMG', 'https://telegra.ph/file/6e9dd701bac49632c
 JOIN_IMG = (environ.get('JOIN_IMG', 'https://telegra.ph/file/2718e562b65da275a7c56.jpg https://telegra.ph/file/a32c89628fa5444dc4a49.jpg https://telegra.ph/file/03bd753c7d9ca801ef5c3.jpg https://telegra.ph/file/ef824cc41a4795ddb1053.png https://telegra.ph/file/45c5df081bd4c631aca0d.jpg')).split()
                     
 # Admins, Log, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5259051520').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001557431626').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5259051520').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_grp = environ.get('AUTH_GROUP')
 login_channel = environ.get('LOGIN_CHANNEL')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID')
-reqst_channel = environ.get('REQST_CHANNEL_ID')
+support_chat_id = environ.get('SUPPORT_CHAT_ID',-1001529371079)
+reqst_channel = environ.get('REQST_CHANNEL_ID',-1001605409121)
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 LOGIN_CHANNEL = int(login_channel) if login_channel and id_pattern.search(login_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 # Custom Chats
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '-1001589810188'))
-FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/+JTMdTj-50MY2NjBl')
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '-1001898364516'))
+FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/+EsuevKcA21A1MTU1')
 
 #VALUES
 HRK_APP_NAME = environ.get('HRK_APP_NAME', 'mybots')
@@ -65,9 +65,9 @@ TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', '')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Akpicturebot:Akpicturebot@cluster0.88tpl4c.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 
 # FSUB
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -85,21 +85,21 @@ APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'tnlink.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '826eb92e893f6fdb42920983bba04c409bdc0b5d')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shorturllink.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '652e60db3da459d3f15dbb1775fa0aaf62b6ec4c')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 NO_RESULTS_MSG = bool(environ.get('NO_RESULTS_MSG', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "7")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "False")), False)
-S_GROUP = environ.get('S_GROUP',"https://t.me/Request_Corner1")
-MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/CornersOfficial")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Request_Corner1')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/CornersOfficial')
-MSG_ALRT = environ.get('MSG_ALRT', 'Piracy Is Crime')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', 0))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Request_Corner1')
+S_GROUP = environ.get('S_GROUP',"https://t.me/blackest_harbour")
+MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/z_harbour")
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/z_harbour_files')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/mdisk_bots')
+MSG_ALRT = environ.get('MSG_ALRT', 'Long Live Black Market Fed')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001634487274))
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001664271836))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'blackest_harbour')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
@@ -112,7 +112,7 @@ LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False")
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001664271836')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
@@ -120,8 +120,8 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 LANGUAGES = ["malayalam", "tamil", "english", "hindi", "telugu", "kannada"]
 
 # Delete Time
-DELETE_TIME = int(environ.get('DELETE_TIME', 300))
-IMDB_DLT_TIME = int(environ.get('IMDB_DLT_TIME', 300))
+DELETE_TIME = int(environ.get('DELETE_TIME', 3000))
+IMDB_DLT_TIME = int(environ.get('IMDB_DLT_TIME', 3000))
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
