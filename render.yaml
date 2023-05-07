@@ -1,6 +1,6 @@
 # A Docker web service
   - type: web
-    name: DQ-The-File-Donor
+    name: chatgptopenai
     env: python
     startCommand: python3 bot.py
     buildCommand: pip3 install -U -r requirements.txt
