@@ -18,11 +18,11 @@ def is_enabled(value, default):
 
 SESSION = environ.get('SESSION', 'Media_srch')
 
-API_ID = int(environ.get('API_ID', '12267130'))
+API_ID = int(environ.get('API_ID', ''))
 
-API_HASH = environ.get('API_HASH', '6ddb28a13ffc2f15dc16f06be6ca3c1f')
+API_HASH = environ.get('API_HASH', '')
 
-BOT_TOKEN = environ.get('BOT_TOKEN', "6226226974:AAGu_p4uGe5GoLk_tNxWvBmY3XEGtXXdTNk")
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -37,15 +37,15 @@ CLOSE_IMG = (environ.get('CLOSE_IMG', 'https://telegra.ph/file/6e9dd701bac49632c
 JOIN_IMG = (environ.get('JOIN_IMG', 'https://telegra.ph/file/2718e562b65da275a7c56.jpg https://telegra.ph/file/a32c89628fa5444dc4a49.jpg https://telegra.ph/file/03bd753c7d9ca801ef5c3.jpg https://telegra.ph/file/ef824cc41a4795ddb1053.png https://telegra.ph/file/45c5df081bd4c631aca0d.jpg')).split()
                     
 # Admins, Log, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5259051520').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001557431626').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5259051520').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_grp = environ.get('AUTH_GROUP')
 login_channel = environ.get('LOGIN_CHANNEL')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID','-1001529371079')
-reqst_channel = environ.get('REQST_CHANNEL_ID','-1001898364516')
+support_chat_id = environ.get('SUPPORT_CHAT_ID','')
+reqst_channel = environ.get('REQST_CHANNEL_ID','')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 LOGIN_CHANNEL = int(login_channel) if login_channel and id_pattern.search(login_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
@@ -87,7 +87,7 @@ CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id f
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # Others
-VERIFY = bool(environ.get('VERIFY', False))
+VERIFY = bool(environ.get('VERIFY', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shorturllink.in')
 SHORTLINK_API = environ.get('SHORTLINK_API', '652e60db3da459d3f15dbb1775fa0aaf62b6ec4c')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
