@@ -25,7 +25,7 @@ API_HASH = environ.get('API_HASH', '6ddb28a13ffc2f15dc16f06be6ca3c1f')
 BOT_TOKEN = environ.get('BOT_TOKEN', '6226226974:AAGu_p4uGe5GoLk_tNxWvBmY3XEGtXXdTNk')
 
 # Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 30))
+CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 BOT_START_TIME = time()
 
@@ -44,8 +44,8 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_grp = environ.get('AUTH_GROUP')
 login_channel = environ.get('LOGIN_CHANNEL')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID',-1001529371079)
-reqst_channel = environ.get('REQST_CHANNEL_ID',)
+support_chat_id = environ.get('SUPPORT_CHAT_ID','-1001529371079')
+reqst_channel = environ.get('REQST_CHANNEL_ID','-1001898364516')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 LOGIN_CHANNEL = int(login_channel) if login_channel and id_pattern.search(login_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
@@ -70,7 +70,7 @@ COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Akpicturebot:Akpicturebot@cluster0.88tpl4c.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Filez')
 
 # FSUB
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -83,7 +83,7 @@ group_sub = environ.get('GROUP_SUB')
 GROUP_SUB = int(group_sub) if group_sub and id_pattern.search(group_sub) else None
 
 #Auto approve 
-CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()]
+CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '-1001529371079').split()]
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # Others
@@ -100,9 +100,9 @@ MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/z_harbour")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/z_harbour_files')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/mdisk_bots')
 MSG_ALRT = environ.get('MSG_ALRT', 'Long Live Black Market Fed')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001634487274))
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001664271836))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001634487274'))
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '-1001664271836'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '-1001898364516')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
