@@ -8,5 +8,5 @@ else
 fi
 cd /Useless-Repo
 pip3 install -U -r requirements.txt
-echo "Starting...."
+echo "Starting Useless-Repo...."
 python3 bot.py
