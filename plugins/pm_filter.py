@@ -891,7 +891,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton("❤️‍🔥 ᴍᴏᴠɪᴇs​ ❤️‍🔥", url='https://t.me/blackest_harbour')
+                  InlineKeyboardButton("❤️‍🔥 Superb Speed Download ❤️‍🔥", url='https://t.me/File_to_Direct_Download_Link_Bot')
                  ]
                 ]
             )
@@ -1362,7 +1362,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('〆 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 〆', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ​', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('👨‍💻 ᴅᴇᴠ​', callback_data='owner_info')
+            InlineKeyboardButton('💲Xtra Ftrs​', callback_data='money_bot')
             ],[      
             InlineKeyboardButton('🎭 ʜᴇʟᴘ 🎭', callback_data='help2'),
             InlineKeyboardButton('♻️ ᴀʙᴏᴜᴛ ♻️', callback_data='about')
@@ -1411,7 +1411,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "owner_info":
         buttons = [[
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('✧ ᴄᴏɴᴛᴀᴄᴛ​', url='t.me/mdisk_bots')
+            InlineKeyboardButton('✧ ᴄᴏɴᴛᴀᴄᴛ​', url='t.me/sigma_male_007')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1426,7 +1426,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "money_bot":
         buttons = [[
-            InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ sᴜᴘᴘᴏʀᴛ', url='https://t.me/mdisk_bots')
+            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/mdisk_bots')
         ],[
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='start'),
             InlineKeyboardButton('ᴄʟᴏsᴇ ⊝', callback_data='close_data')
@@ -1879,7 +1879,7 @@ async def auto_filter(client, msg, spoll=False):
             btn.insert(0, 
                 [
                     InlineKeyboardButton(f'🗂 ꜰɪʟᴇs: {total_results}', 'dupe'),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton("🔊ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
                     InlineKeyboardButton(f'🔮 ᴛɪᴘs', 'tips')
                 ]
             )
@@ -1888,7 +1888,7 @@ async def auto_filter(client, msg, spoll=False):
             btn.insert(0, 
                 [
                     InlineKeyboardButton(f'🗂 ꜰɪʟᴇs: {total_results}', 'dupe'),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton("🔉ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
                     InlineKeyboardButton(f'🔮 ᴛɪᴘs', 'tips')
                 ]
             )
@@ -1901,7 +1901,7 @@ async def auto_filter(client, msg, spoll=False):
             btn.insert(0, 
                 [
                     InlineKeyboardButton(f'🗂 ꜰɪʟᴇs: {total_results}', 'dupe'),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton("🎤ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
                     InlineKeyboardButton(f'🔮 ᴛɪᴘs', 'tips')
                 ]
             )
@@ -1910,7 +1910,7 @@ async def auto_filter(client, msg, spoll=False):
             btn.insert(0, 
                 [
                     InlineKeyboardButton(f'🗂 ꜰɪʟᴇs: {total_results}', 'dupe'),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton("💽ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
                     InlineKeyboardButton(f'🔮 ᴛɪᴘs', 'tips')
                 ]
             )
