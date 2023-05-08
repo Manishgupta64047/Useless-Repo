@@ -29,12 +29,12 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 BOT_START_TIME = time()
 
-PICS = (environ.get('PICS', '')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/3f9b79601023c77315bf3.jpg https://graph.org/file/6a6bf39347e4e84631e3b.jpg https://graph.org/file/112c69f9381694fbf944e.jpg https://graph.org/file/3b991dca290da6b225ce9.jpg https://graph.org/file/0ef1c3fd31005f7dae66f.jpg https://graph.org/file/b527a10a1f42ff88d46ea.jpg https://graph.org/file/5ea045fc7d61908fce1a0.jpg https://graph.org/file/41f8734913b68ebe0e595.jpg https://graph.org/file/f0ee2ad2fa610307a41ec.jpg https://graph.org/file/eb6d54665b685f27a4565.jpg https://graph.org/file/41f7cb2b1b9c7fbf2a7bc.jpg https://graph.org/file/60c39f0b4c4a7ad0a33f0.jpg https://graph.org/file/ff615d46c42baa8369681.jpg https://graph.org/file/0bf09c4fb7ec1c256336f.jpg https://graph.org/file/5a16a626410f8c3bdc918.jpg https://graph.org/file/461c7839160e988256b8b.jpg https://graph.org/file/afb59c5fe43c92be439a9.jpg https://graph.org/file/0991d5776f7ad85d5e292.jpg https://graph.org/file/09d4dcf2c1dc54fefffb6.jpg https://graph.org/file/df99ea75947f24e9ac054.jpg')).split()
 MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/f7f2a532fe4b990044507.mp4")
-NOR_IMG = (environ.get("NOR_IMG","")).split()
+NOR_IMG = (environ.get("NOR_IMG","https://graph.org/file/3f9b79601023c77315bf3.jpg https://graph.org/file/3b991dca290da6b225ce9.jpg https://graph.org/file/41f8734913b68ebe0e595.jpg https://graph.org/file/0ef1c3fd31005f7dae66f.jpg https://graph.org/file/ff615d46c42baa8369681.jpg")).split()
 NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/6bb65e84e95b708f7be7a.jpg")
 CLOSE_IMG = (environ.get('CLOSE_IMG', 'https://telegra.ph/file/6e9dd701bac49632cf79a.jpg https://telegra.ph/file/998d2b84e1411ed5189e3.jpg https://telegra.ph/file/c199babd469011d07f139.jpg https://telegra.ph/file/31b6d3d2c70bbe52b5300.jpg https://telegra.ph/file/77744524fbb6305298d45.jpg https://telegra.ph/file/9d79d990674166a2a2364.jpg')).split()
-JOIN_IMG = (environ.get('JOIN_IMG', 'https://telegra.ph/file/2718e562b65da275a7c56.jpg https://telegra.ph/file/a32c89628fa5444dc4a49.jpg https://telegra.ph/file/03bd753c7d9ca801ef5c3.jpg https://telegra.ph/file/ef824cc41a4795ddb1053.png https://telegra.ph/file/45c5df081bd4c631aca0d.jpg')).split()
+JOIN_IMG = (environ.get('JOIN_IMG', 'https://telegra.ph/file/2718e562b65da275a7c56.jpg https://telegra.ph/file/a32c89628fa5444dc4a49.jpg https://telegra.ph/file/03bd753c7d9ca801ef5c3.jpg https://telegra.ph/file/ef824cc41a4795ddb1053.png https://telegra.ph/file/45c5df081bd4c631aca0d.jpg https://graph.org/file/df99ea75947f24e9ac054.jpg https://graph.org/file/461c7839160e988256b8b.jpg https://graph.org/file/5ea045fc7d61908fce1a0.jpg https://graph.org/file/afb59c5fe43c92be439a9.jpg ')).split()
                     
 # Admins, Log, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
