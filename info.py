@@ -51,7 +51,7 @@ LOGIN_CHANNEL = int(login_channel) if login_channel and id_pattern.search(login_
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 # Custom Chats
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '-1001898364516'))
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL',-1001898364516))
 FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/+EsuevKcA21A1MTU1')
 
 #VALUES
@@ -101,7 +101,7 @@ GRP_LNK = environ.get('GRP_LNK', 'https://t.me/z_harbour_files')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/mdisk_bots')
 MSG_ALRT = environ.get('MSG_ALRT', 'Long Live Black Market Fed')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', ''))
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL', ' -1001898364516'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
