@@ -46,11 +46,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('〆 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 〆', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ​', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🎀💻 ᴅᴇᴠ​', callback_data='owner_info')
+            InlineKeyboardButton('🔍Vip sᴇᴀʀᴄʜ​', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🎀 Connect API​', url='https://graph.org/JARVIS-05-08-8')
             ],[      
             InlineKeyboardButton('🕯 ʜᴇʟᴘ 🕯', callback_data='help2'),
-            InlineKeyboardButton('🍾 ᴀʙᴏᴜᴛ 🍾', callback_data='about')
+            InlineKeyboardButton('✳️ ᴀʙᴏᴜᴛ ✴️', callback_data='about')
             ],[
             InlineKeyboardButton('💰 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 💸', callback_data='money_bot')
         ]] 
@@ -73,10 +73,10 @@ async def start(client, message):
             InlineKeyboardButton('〆 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 〆', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ​', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🎀💻 ᴅᴇᴠ​', callback_data='owner_info')
+            InlineKeyboardButton('🎀Get Unlimited Access🎊​', url='https://graph.org/JARVIS-05-08-6')
             ],[      
             InlineKeyboardButton('🕯 ʜᴇʟᴘ 🕯', callback_data='help2'),
-            InlineKeyboardButton('🍾 ᴀʙᴏᴜᴛ 🍾', callback_data='about')
+            InlineKeyboardButton('✳️ ᴀʙᴏᴜᴛ ✴️', callback_data='about')
             ],[
             InlineKeyboardButton('💰 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 💸', callback_data='money_bot')
         ]] 
@@ -135,7 +135,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [                         
-                          InlineKeyboardButton("❤️‍🔥 ᴍᴏᴠɪᴇs ❤️‍🔥", url='https://t.me/blackest_harbour')                         
+                          InlineKeyboardButton("❤️‍🔥 Download 👀", url='https://t.me/File_to_Direct_Download_Link_Bot')                         
                          ]
                         ]
                     )
@@ -151,7 +151,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton("❤️‍🔥 ᴍᴏᴠɪᴇs ❤️‍🔥", url='https://t.me/blackest_harbour')   
+                          InlineKeyboardButton("❤️‍🔥 Download ❤️‍🔥", url='https://t.me/File_to_Direct_Download_Link_Bot')   
                          ]
                         ]
                     )
@@ -249,7 +249,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                          [
-                          InlineKeyboardButton("❤️‍🔥 ᴍᴏᴠɪᴇs ❤️‍🔥", url='https://t.me/z_harbour_files')   
+                          InlineKeyboardButton("❤️‍🔥 Download ❤️‍🔥", url='https://t.me/File_to_Direct_Download_Link_Bot')   
                          ]
                         ]
                     )
@@ -286,7 +286,7 @@ async def start(client, message):
             InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
         ]]
         await message.reply_text(
-            text="<b>ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪꜰɪᴇᴅ  !\nᴋɪɴᴅʟʏ ᴠᴇʀɪꜰʏ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ !</b>",
+            text="<b>ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪꜰɪᴇᴅ  !\nᴋɪɴᴅʟʏ ᴠᴇʀɪꜰʏ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ ! https://graph.org/JARVIS-05-08-6",
             protect_content=True,
             reply_markup=InlineKeyboardMarkup(btn)
         )
@@ -299,7 +299,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton("❤️‍🔥 ᴍᴏᴠɪᴇs ❤️‍🔥", url='https://t.me/z_harbour')   
+              InlineKeyboardButton("✴️ Download ❤️‍🔥", url='https://t.me/File_to_Direct_Download_Link_Bot')   
              ]
               ]
        )
