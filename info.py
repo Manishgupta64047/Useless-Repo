@@ -87,11 +87,11 @@ CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id f
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # Others
-VERIFY = bool(environ.get('VERIFY', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', '') #shorturllink.in
-SHORTLINK_API = environ.get('SHORTLINK_API', '') #652e60db3da459d3f15dbb1775fa0aaf62b6ec4c
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
-NO_RESULTS_MSG = bool(environ.get('NO_RESULTS_MSG',True))
+VERIFY = bool(environ.get('VERIFY',True))
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shorturllink.in') #
+SHORTLINK_API = environ.get('SHORTLINK_API', '652e60db3da459d3f15dbb1775fa0aaf62b6ec4c') #
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK',False))
+NO_RESULTS_MSG = bool(environ.get('NO_RESULTS_MSG',False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "False")), False)
@@ -105,7 +105,7 @@ FILE_CHANNEL = int(environ.get('FILE_CHANNEL', ' -1001898364516'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
-AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
+AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")),True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
