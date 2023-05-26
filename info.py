@@ -39,7 +39,7 @@ JOIN_IMG = (environ.get('JOIN_IMG', 'https://telegra.ph/file/2718e562b65da275a7c
 # Admins, Log, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5259051520').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_grp = environ.get('AUTH_GROUP')
 login_channel = environ.get('LOGIN_CHANNEL')
@@ -73,7 +73,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 
 # FSUB
-auth_channel = environ.get('AUTH_CHANNEL',False)
+auth_channel = environ.get('AUTH_CHANNEL',True)
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 # Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
 REQ_CHANNEL = environ.get("REQ_CHANNEL",False)
@@ -87,11 +87,11 @@ CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id f
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # Others
-VERIFY = bool(environ.get('VERIFY',True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shorturllink.in') #
-SHORTLINK_API = environ.get('SHORTLINK_API', '652e60db3da459d3f15dbb1775fa0aaf62b6ec4c') #
+VERIFY = bool(environ.get('VERIFY',False))
+SHORTLINK_URL = environ.get('SHORTLINK_URL', '') #shorturllink.in
+SHORTLINK_API = environ.get('SHORTLINK_API', '') #652e60db3da459d3f15dbb1775fa0aaf62b6ec4c
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK',False))
-NO_RESULTS_MSG = bool(environ.get('NO_RESULTS_MSG',False))
+NO_RESULTS_MSG = bool(environ.get('NO_RESULTS_MSG',True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "False")), False)
