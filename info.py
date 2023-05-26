@@ -45,7 +45,7 @@ auth_grp = environ.get('AUTH_GROUP','')
 login_channel = environ.get('LOGIN_CHANNEL','')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 support_chat_id = environ.get('SUPPORT_CHAT_ID','-1001603098859')
-reqst_channel = environ.get('REQST_CHANNEL_ID','-1001605409121')
+reqst_channel = environ.get('REQST_CHANNEL_ID','')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 LOGIN_CHANNEL = int(login_channel) if login_channel and id_pattern.search(login_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
@@ -73,7 +73,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 
 # FSUB
-auth_channel = environ.get('AUTH_CHANNEL',True)
+auth_channel = environ.get('AUTH_CHANNEL','')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 # Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
 REQ_CHANNEL = environ.get("REQ_CHANNEL",True)
