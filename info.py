@@ -51,8 +51,8 @@ LOGIN_CHANNEL = int(login_channel) if login_channel and id_pattern.search(login_
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 # Custom Chats
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL',-1001825733498))
-FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/+_R_Z-m5w7TpkYjJl')
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL',-1001898364516))
+FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/+oUQoWrCe9FZmMWZl')
 
 #VALUES
 HRK_APP_NAME = environ.get('HRK_APP_NAME', 'mybots')
@@ -70,10 +70,10 @@ COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Akpicturebot:Akpicturebot@cluster0.88tpl4c.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_File')
 
 # FSUB
-auth_channel = environ.get('AUTH_CHANNEL','-1001557431626')
+auth_channel = environ.get('AUTH_CHANNEL','')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 # Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
 REQ_CHANNEL = environ.get("REQ_CHANNEL",False)
@@ -101,7 +101,7 @@ GRP_LNK = environ.get('GRP_LNK', 'https://t.me/z_harbour_files')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/mdisk_bots')
 MSG_ALRT = environ.get('MSG_ALRT', 'Long Live Black Market Fed')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001903009578'))
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '-1001825733498'))
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '-1001898364516'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '-1001603098859')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
