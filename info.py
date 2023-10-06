@@ -16,13 +16,13 @@ def is_enabled(value, default):
 
 # Bot information
 
-SESSION = environ.get('SESSION', 'Media_srch')
+SESSION = environ.get('SESSION', 'Black_Soverign')
 
-API_ID = int(environ.get('API_ID', ''))
+API_ID = int(environ.get('API_ID', '12267130'))
 
-API_HASH = environ.get('API_HASH', '')
+API_HASH = environ.get('API_HASH', '6ddb28a13ffc2f15dc16f06be6ca3c1f')
 
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+BOT_TOKEN = environ.get('BOT_TOKEN', "5390002514:AAEQmRr9gYIW60FyDxMJk0cNz4Z38-CTD34")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -37,7 +37,7 @@ CLOSE_IMG = (environ.get('CLOSE_IMG', 'https://telegra.ph/file/6e9dd701bac49632c
 JOIN_IMG = (environ.get('JOIN_IMG', 'https://telegra.ph/file/2718e562b65da275a7c56.jpg https://telegra.ph/file/a32c89628fa5444dc4a49.jpg https://telegra.ph/file/03bd753c7d9ca801ef5c3.jpg https://telegra.ph/file/ef824cc41a4795ddb1053.png https://telegra.ph/file/45c5df081bd4c631aca0d.jpg https://graph.org/file/df99ea75947f24e9ac054.jpg https://graph.org/file/461c7839160e988256b8b.jpg https://graph.org/file/5ea045fc7d61908fce1a0.jpg https://graph.org/file/afb59c5fe43c92be439a9.jpg ')).split()
                     
 # Admins, Log, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1413071149').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = environ.get('AUTH_USERS','')
@@ -51,8 +51,8 @@ LOGIN_CHANNEL = int(login_channel) if login_channel and id_pattern.search(login_
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 # Custom Chats
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL',-1001898364516))
-FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/+EsuevKcA21A1MTU1')
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL',-1001825733498))
+FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/+_R_Z-m5w7TpkYjJl')
 
 #VALUES
 HRK_APP_NAME = environ.get('HRK_APP_NAME', 'mybots')
@@ -68,7 +68,7 @@ TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://heroku64047:heroku64047@cluster1.xxn3j5w.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Ayush:Ayush@cluster0.srqzvpb.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 
@@ -101,7 +101,7 @@ GRP_LNK = environ.get('GRP_LNK', 'https://t.me/z_harbour_files')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/mdisk_bots')
 MSG_ALRT = environ.get('MSG_ALRT', 'Long Live Black Market Fed')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', ' -1001898364516'))
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '-1001825733498'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '-1001603098859')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
