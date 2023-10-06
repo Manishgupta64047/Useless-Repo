@@ -44,8 +44,8 @@ AUTH_USERS = environ.get('AUTH_USERS','')
 auth_grp = environ.get('AUTH_GROUP','')
 login_channel = environ.get('LOGIN_CHANNEL','')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID','')
-reqst_channel = environ.get('REQST_CHANNEL_ID','')
+support_chat_id = environ.get('SUPPORT_CHAT_ID','-1001903009578')
+reqst_channel = environ.get('REQST_CHANNEL_ID','-1001903009578')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 LOGIN_CHANNEL = int(login_channel) if login_channel and id_pattern.search(login_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
@@ -73,7 +73,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 
 # FSUB
-auth_channel = environ.get('AUTH_CHANNEL','')
+auth_channel = environ.get('AUTH_CHANNEL','-1001557431626')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 # Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
 REQ_CHANNEL = environ.get("REQ_CHANNEL",False)
@@ -100,7 +100,7 @@ MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/z_harbour")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/z_harbour_files')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/mdisk_bots')
 MSG_ALRT = environ.get('MSG_ALRT', 'Long Live Black Market Fed')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001903009578'))
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '-1001825733498'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '-1001603098859')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
